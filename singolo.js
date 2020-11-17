@@ -8,7 +8,7 @@ const slaiderImage = document.querySelector('.phone-image-blue')
 const imageBlue = document.querySelector('.phone-image-blue-active')
 const phoneImageRed =document.querySelector('.phone-image-red')
 const mainImage = document.querySelector('.phone-image')
-const slaider = document.querySelector('.slaider')
+const slaider = document.querySelector('.slider')
 const portfolioImage = document.querySelector('.portfolio-image')
 const firstNavigationItemPortfolio = document.querySelector('.first-navigation-items')
 const secondNavigationItemPortfolio = document.querySelector('.second-navigation-items')
@@ -61,16 +61,16 @@ lastNavigationItemPortfolio.addEventListener('click', () =>{
   firstNavigationItemPortfolio.classList.remove('first-navigation-items')
 })
 
-// Slaider
+// Slider
 
 buttonsImageRight.addEventListener('click',()=>{
-  slaider.classList.add('slaider-active')
+  slaider.classList.add('slider-active')
   mainImage.classList.add('phone-image-active')
   slaiderImage.classList.add('phone-image-blue-active')
   phoneImageRed.classList.remove('phone-image-red-active')
 })
 buttonsImageLeft.addEventListener('click',()=>{
-  slaider.classList.remove('slaider-active')
+  slaider.classList.remove('slider-active')
   mainImage.classList.add('phone-image-active')
   phoneImageRed.classList.add('phone-image-red-active')
   slaiderImage.classList.remove('phone-image-blue-active')

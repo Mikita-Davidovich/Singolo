@@ -22,40 +22,41 @@ const navigationMenuItemServices = document.getElementById('itemServices')
 const navigationMenuItemPortfolio = document.getElementById('itemPortfolio')
 const logo = document.querySelector('.logo')
 const symbolLogo = document.querySelector('.symbol-logo')
+const opacity = document.querySelector('.opacity')
 
 // Portfolio
 
 firstNavigationItemPortfolio.addEventListener('click', () =>{
-  portfolioImageFirst.classList.remove('portfolio-image-first-active')
-  portfolioImageSecond.classList.remove('portfolio-image-second-active')
-  portfolioImageThird.classList.remove('portfolio-image-third-active')
+  portfolioImageFirst.classList.remove('potrfolio-image-active')
+  portfolioImageSecond.classList.remove('potrfolio-image-active')
+  portfolioImageThird.classList.remove('potrfolio-image-active')
   firstNavigationItemPortfolio.classList.add('navigation-items-active')
   secondNavigationItemPortfolio.classList.remove('navigation-items-active')
   thirdNavigationItemPortfolio.classList.remove('navigation-items-active')
   lastNavigationItemPortfolio.classList.remove('navigation-items-active')
 })
 secondNavigationItemPortfolio.addEventListener('click', () =>{
-  portfolioImageFirst.classList.add('portfolio-image-first-active')
+  portfolioImageFirst.classList.add('potrfolio-image-active')
   secondNavigationItemPortfolio.classList.add('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('navigation-items-active')
   thirdNavigationItemPortfolio.classList.remove('navigation-items-active')
   lastNavigationItemPortfolio.classList.remove('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('first-navigation-items')
-  portfolioImageSecond.classList.remove('portfolio-image-second-active')
-  portfolioImageThird.classList.remove('portfolio-image-third-active')
+  portfolioImageSecond.classList.remove('potrfolio-image-active')
+  portfolioImageThird.classList.remove('potrfolio-image-active')
 })
 thirdNavigationItemPortfolio.addEventListener('click', () =>{
-  portfolioImageSecond.classList.add('portfolio-image-second-active')
+  portfolioImageSecond.classList.add('potrfolio-image-active')
   thirdNavigationItemPortfolio.classList.add('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('navigation-items-active')
   secondNavigationItemPortfolio.classList.remove('navigation-items-active')
   lastNavigationItemPortfolio.classList.remove('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('first-navigation-items')
-  portfolioImageThird.classList.remove('portfolio-image-third-active')
+  portfolioImageThird.classList.remove('potrfolio-image-active')
 
 }) 
 lastNavigationItemPortfolio.addEventListener('click', () =>{
-  portfolioImageThird.classList.add('portfolio-image-third-active')
+  portfolioImageThird.classList.add('potrfolio-image-active')
   lastNavigationItemPortfolio.classList.add('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('navigation-items-active')
   secondNavigationItemPortfolio.classList.remove('navigation-items-active')
@@ -91,6 +92,7 @@ const updateMenu = () => {
   burgerLine.classList.toggle('burger-line-active')
   logo.classList.toggle('logo-active')
   symbolLogo.classList.toggle('symbol-logo-active')
+  opacity.classList.toggle('opacity-active')
 }
 burgerMenu.addEventListener('click', updateMenu)
 

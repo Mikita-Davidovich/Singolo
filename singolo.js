@@ -26,7 +26,7 @@ const opacity = document.querySelector('.opacity')
 
 // Portfolio
 
-firstNavigationItemPortfolio.addEventListener('click', () =>{
+firstNavigationItemPortfolio.addEventListener('click', () => {
   portfolioImageFirst.classList.remove('potrfolio-image-active')
   portfolioImageSecond.classList.remove('potrfolio-image-active')
   portfolioImageThird.classList.remove('potrfolio-image-active')
@@ -34,8 +34,8 @@ firstNavigationItemPortfolio.addEventListener('click', () =>{
   secondNavigationItemPortfolio.classList.remove('navigation-items-active')
   thirdNavigationItemPortfolio.classList.remove('navigation-items-active')
   lastNavigationItemPortfolio.classList.remove('navigation-items-active')
-})
-secondNavigationItemPortfolio.addEventListener('click', () =>{
+});
+secondNavigationItemPortfolio.addEventListener('click', () => {
   portfolioImageFirst.classList.add('potrfolio-image-active')
   secondNavigationItemPortfolio.classList.add('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('navigation-items-active')
@@ -44,8 +44,8 @@ secondNavigationItemPortfolio.addEventListener('click', () =>{
   firstNavigationItemPortfolio.classList.remove('first-navigation-items')
   portfolioImageSecond.classList.remove('potrfolio-image-active')
   portfolioImageThird.classList.remove('potrfolio-image-active')
-})
-thirdNavigationItemPortfolio.addEventListener('click', () =>{
+});
+thirdNavigationItemPortfolio.addEventListener('click', () => {
   portfolioImageSecond.classList.add('potrfolio-image-active')
   thirdNavigationItemPortfolio.classList.add('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('navigation-items-active')
@@ -54,38 +54,38 @@ thirdNavigationItemPortfolio.addEventListener('click', () =>{
   firstNavigationItemPortfolio.classList.remove('first-navigation-items')
   portfolioImageThird.classList.remove('potrfolio-image-active')
 
-}) 
-lastNavigationItemPortfolio.addEventListener('click', () =>{
+});
+lastNavigationItemPortfolio.addEventListener('click', () => {
   portfolioImageThird.classList.add('potrfolio-image-active')
   lastNavigationItemPortfolio.classList.add('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('navigation-items-active')
   secondNavigationItemPortfolio.classList.remove('navigation-items-active')
   thirdNavigationItemPortfolio.classList.remove('navigation-items-active')
   firstNavigationItemPortfolio.classList.remove('first-navigation-items')
-})
+});
 
 // Slider
 
-buttonsImageRight.addEventListener('click',()=>{
+buttonsImageRight.addEventListener('click', ()=> {
   slider.classList.add('slider-active')
   mainImage.classList.add('phone-image-active')
   sliderImage.classList.add('phone-image-blue-active')
   phoneImageRed.classList.remove('phone-image-red-active')
-})
-buttonsImageLeft.addEventListener('click',()=>{
+});
+buttonsImageLeft.addEventListener('click', ()=> {
   slider.classList.remove('slider-active')
   mainImage.classList.add('phone-image-active')
   phoneImageRed.classList.add('phone-image-red-active')
   sliderImage.classList.remove('phone-image-blue-active')
-})
+});
 
 // Burger
 
 for(let i = 0; i < navigationItems.length; i++) {
-  navigationItems[i].addEventListener('click', ()=>{
+  navigationItems[i].addEventListener('click', ()=> {
     burger.classList.remove('active')
     burgerLine.classList.remove('burger-line-active')
-  })
+  });
 }
 const updateMenu = () => {
   burger.classList.toggle('active')
@@ -98,7 +98,7 @@ burgerMenu.addEventListener('click', updateMenu)
 
 // Header 
 
-window.addEventListener('scroll', () =>{
+window.addEventListener('scroll', () => {
   if(window.pageYOffset >= 0 && window.pageYOffset < 510){
     navigationMenuItemHome.classList.add('navigation-menu-items-active')
     navigationMenuItemServices.classList.remove('navigation-menu-items-active')
@@ -115,4 +115,4 @@ window.addEventListener('scroll', () =>{
     navigationMenuItemHome.classList.remove('navigation-menu-items-active')
     navigationMenuItemHome.classList.remove('item-home')
   }
-})
+});

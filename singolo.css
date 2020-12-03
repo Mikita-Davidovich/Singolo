@@ -18,8 +18,7 @@ body{
   font-size: 2.5rem;
   font-weight: bold;
   color: #FFFFFF;
-  padding-top: 2.9rem;
-  margin: 0;
+  margin: 2.9rem 0;
   cursor: pointer;
 }
 .symbol-logo{
@@ -29,10 +28,6 @@ body{
   display: none;
 }
 .burger-logo{
-  cursor: pointer;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #FFFFFF;
   display: none;
 }
 .navigation-menu{
@@ -56,7 +51,7 @@ body{
   content: "·";
   left: -16px;
   top: 2px;
-  color: #FFFFFF !important;
+  color: #ffffff;
 }
 .navigation-menu-items:hover{
   color: #F06C64;
@@ -272,8 +267,6 @@ body{
   }
   .services-wrapper{
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 2rem;
-    padding: 4.7rem 0 4.6rem 0;
   }
 }
 @media (max-width:767px){
@@ -301,7 +294,7 @@ body{
   .burger-logo{
     display: block;
     position: absolute;
-    top:27px;
+    top: 27px;
     margin: 0;   
   }
   .burger{
@@ -356,26 +349,26 @@ body{
     transform: translateX(-100%);
     justify-content: center;
     align-items: center;
-    left: 0;
+    left: -300px;
     padding: 0;
-    transition: .3s all;
     width: 278px;
+    transition: .3s;
   }
   .main-navigation-items{
     flex-flow: column;
   }
   .active{
-    transform: translateX(0%);
+    transform: translateX(300px);
     box-shadow: 0 0 18px 22px rgba(0, 0, 0, 0.8);
+    transition: .3s;
   }
   .navigation-menu-items{
     font-size: 24px;
     line-height: 29px;
-    letter-spacing: -0.035em;
-    padding-bottom: 27px;
+    padding: 0 0 27px 15px;
   }
   .navigation-menu-items:last-child{
-    padding-bottom: 23rem;
+    padding-bottom: 3rem;
   }
   .services-wrapper{
     grid-template-columns: 1fr;
@@ -405,7 +398,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index:1;
+    z-index: 1;
     opacity: 0.6;
     background-color: black;
     transition: 0.3s all;

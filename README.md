@@ -1,2 +1,2 @@
 # Singolo
-https://Mikita-Davidovich.github.io/singolo/
+https://Mikita-Davidovich.github.io/Singolo/

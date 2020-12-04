@@ -18,7 +18,7 @@ body{
   font-size: 25px;
   font-weight: bold;
   color: #FFFFFF;
-  margin: 2.9rem 0;
+  margin: 29px 0;
   cursor: pointer;
 }
 .symbol-logo{
@@ -403,7 +403,7 @@ body{
 }
 @media (max-width:375px){
   .navigation-items{
-    font-size: 0.9rem;
+    font-size: 9px;
   }
   .main-portfolio-image{
     grid-gap: 10px;
